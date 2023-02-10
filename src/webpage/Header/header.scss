@@ -1,0 +1,34 @@
+@import '../Sidenavbar/leftnavbar.scss';
+@import '../myVariable.scss';
+
+.header{
+    font-size: $myFontSize;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 35px;
+    box-shadow:$myBoxShadow;
+    z-index:2;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.arrow-icon{
+    display: flex;
+}
+.arrow-icon div{
+    padding-right:25px ;
+}
+.dashboard span{
+    padding: 0px 8px;
+}
+.bar-icon{
+    display: none;
+}
+.bar-icon button{
+    background-color: white;
+    border:none;
+}
+
+

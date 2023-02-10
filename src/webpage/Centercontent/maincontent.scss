@@ -1,0 +1,118 @@
+@import '../myVariable.scss';
+@import '../Sidenavbar/leftnavbar.scss';
+.main{
+    font-size: $myFontSize;
+    background-color: $background-color-gray;
+    position: absolute;
+    left:280px;
+    right: 0;
+    padding: 5% 10%;
+}
+.hide{
+    display: none
+}
+.input-img{
+    width: 65%;
+}
+.navbar-links{
+    @extend .main;
+    height:calc(100vh - 56px)
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.card{
+    margin: 25px;
+}
+.card-tile-post{
+    display: flex;
+    button{
+        background: none;
+        
+    }
+}
+.show-btn{
+    height: 35px;
+    width: 75px;
+    background-color: white;
+    margin-top: 10px;
+    border:1px solid black;
+    border-radius: 4px;
+    
+}
+.show-btn:hover{
+    border:1px solid $hoverColor;
+    background-color:$hoverColor;
+    color: white;
+}
+.preview-img{
+    width: 50%;
+    opacity: 50%;
+}
+.hidden-attach-file{
+    display: flex;
+    flex-direction: column;
+}
+.card-tile{
+    display: flex;
+    border-radius: $my-border-radius;
+    background-color: white;
+    padding: 20px 10px;
+    box-shadow: $my-box-shadow;
+}
+.no-btn{
+    display: none;
+}
+.card-tile input{
+    width:95%;
+    border-radius: $my-border-radius;
+    border: none;
+    background-color:$input-color;
+    padding: 10px;
+    outline: none;
+}
+.card-tile-content{
+    flex-grow: 2;
+}
+.preview-button{
+    display: flex;
+    .show-btn{
+        margin-right: 10px;
+        
+    }
+}
+.attachment-line{
+    display: flex;
+    flex:1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.attachment-line div span{
+    padding-left: 5px;
+}
+.static-card{
+    border-radius: $my-border-radius;
+    background-color: white;
+    padding: 20px 10px;
+    box-shadow: $my-box-shadow;
+}
+.static-card-userimage{
+    display: flex;
+    align-items: center;
+}
+.static-card-username{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.static-card-usercontent{
+    text-align: justify;
+    padding: 10px;
+}
+.static-card-user{
+    display: flex;
+    justify-content: space-between;
+    padding-right:10px;
+}

@@ -1,0 +1,143 @@
+@import './myVariable.scss';
+@media screen and (max-width:769px) {
+    .header,.main,.navbar-links,.left-navbar,.no-display,button{
+        font-size: 13px;
+    }
+    FontAwesomeIcon{
+        font-size:18px;
+    }
+    .main,.navbar-links{
+        padding:7%;
+    }
+    ::placeholder{
+        font-size: 14px;
+    }
+    .card-tile input{
+        width:90%;
+    }
+    .attachment-line{
+        padding:10px;
+    }
+    .preview-img{
+        width: 65%;
+    }
+    .show-btn{
+        height: 30px;
+        width: 60px;
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:626px) {
+    .left-navbar{
+        width: 220px;
+    }
+    .main,.navbar-links{
+        left:220px;
+    }
+    .primary-button{
+        width:190px;
+    }
+}
+@media screen and (max-width:501px) {
+    .main,.navbar-links{
+        padding: 60px;
+        left:0px;
+    }
+    .primary-button{
+        width:200px;
+    }
+    .bar-icon{
+        display: block;
+    }
+    .left-navbar{
+        display: none;
+    }
+    .no-display{
+        z-index: 1;
+        display:block;
+        position: fixed;
+        top:56px;
+        right:0;
+        height:calc(100vh - 20px);
+        overflow-y: auto;
+        background-color: white;
+        width: 220px;
+    }
+}
+@media screen and (max-width:426px){
+    :root{
+        font-size: $font-size-12;
+    }
+    .header,.main,.navbar-links,.left-navbar,.no-display,button{
+        font-size: $font-size-12;
+    }
+    .left-navbar{
+        display: none;
+    }
+    .no-display{
+        z-index: 1;
+        display:block;
+        position: fixed;
+        top:56px;
+        right:0;
+        height:calc(100vh - 20px);
+        overflow-y: auto;
+        background-color: white;
+        width:250px;
+    }
+    .primary-button{
+        width:225px;
+        font-size: $font-size-12;
+    }
+    ::placeholder,button{
+        font-size: $font-size-12;
+    }
+    .bar-icon{
+        display: block;
+    }
+    .arrow-icon div{
+        padding-right:20px ;
+    }
+    .dashboard span{
+        padding: 0px 5px;
+    }
+    .main,.navbar-links{
+        position: absolute;
+        left: 0;
+        padding: 15% 6%;
+    }
+    .card-tile input{
+        width:85%;
+    }
+    .show-btn{
+        height: 30px;
+        width: 60px;
+        font-size: $font-size-12;
+    }
+}
+@media screen and (max-width:376px) {
+    :root{
+        font-size: $font-size-10;
+    }
+    ::placeholder{
+        font-size: $font-size-10;
+    }
+    .header,.main,.navbar-links,.no-display{
+        font-size: $font-size-10;
+    }
+    .no-display{
+        width:220px;
+    }
+    .primary-button{
+        width:190px;
+        font-size: $font-size-10;
+    }
+    .preview-img{
+        width: 70%;
+    }
+    .show-btn{
+        height: 20px;
+        width: 50px;
+        font-size: $font-size-10;
+    }
+}

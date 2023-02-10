@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300&display=swap');
+@import '../myVariable.scss';
+*{
+    font-family: $myFont;
+}
+.left-navbar,.no-display{
+    width: 280px;
+    font-size: $myFontSize;
+    position: fixed;
+    top:56px;
+    height:calc(100vh - 50px);
+    overflow-y: auto;
+    background-color: white;
+    z-index: 1;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar{
+    display: none;
+}
+.left-navbar-icon{
+    padding: 10px;
+}
+a{
+    text-decoration:none ;
+    color: black;
+}
+// .nav-list:hover{
+//     color: white;
+//     background: $hoverColor;
+//     .align-num{
+//         color:$hoverColor;
+//     }
+// }
+a.active{
+    .nav-list{
+        color: white;
+        background-color: $hoverColor;
+    }
+    // background:red;
+}
+.card-tile-icon,.icon img, .static-card-userimage img{
+    height: 45px;
+    border-radius: 100%;
+    padding:10px;
+}
+
+.icon{
+    display: flex;
+    align-items:center ;
+}
+
+.nav-list ,.default{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+.nav-list span ,.default span{
+    padding-left:20px;
+}
+// table{
+//     padding: 15px;
+//     width: 100%;
+//     text-align: start;
+//     // border-right: 2px solid black;
+// }
+// .firstHalf{
+//     padding: 10px 12px;
+//     padding-right: 20px;
+// }
+// .secondHalf{
+//     padding: 10px 23px;
+// }
+.align-num{
+    width: 25%;
+}
+.font-awesome-icon{
+    font-size:20px;
+    text-align: left ;
+    width:20%;
+}
+.primary-button{
+    margin: 20px 15px;
+    width:255px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+    border-radius: 10px;
+}
+.primary-button:hover{
+    background-color: $hoverColor;
+    color: white;
+    // border: 1px solid $hoverColor;
+}
+.down-arrow{
+    padding-left:5px ;
+}
+.left-align{
+    padding:15px;
+    padding-top:20px ;
+    display: flex;
+}
+.align-text{
+    font-weight: 900;
+    text-align:left;
+    width: 70%;
+}

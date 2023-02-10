@@ -1,0 +1,19 @@
+$font-size-12:12px;
+$font-size-10:10px;
+$font-size-8:8px;
+$my-border-radius:25px;
+$my-box-shadow:0px 2px 5px gray;
+$background-color-gray:#e2e1e8;
+$input-color:#f0eff4;
+$myBoxShadow:0px 2px 8px gray;
+$myFontSize:14px;
+$myFont: 'Roboto Serif', serif;
+$hoverColor:hsl(322, 92%, 20%);
+
+:root{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+button:hover{
+    cursor: pointer;
+}
